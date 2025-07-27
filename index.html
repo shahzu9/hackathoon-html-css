@@ -1,4 +1,3 @@
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Resume Checker | Hiring Mine</title>
-
 </head>
 <body>
   <header>
-    <div class="logo" aria-label="Hiring Mine logo">Hiring<span class="m-shape" aria-hidden="true">M</span>ine</div>
+    <!-- Fixed header layout -->
+    <div class="logo-container">
+      <div class="logo" aria-label="Hiring Mine logo">Hiring<span class="m-shape" aria-hidden="true">M</span>ine</div>
+      </div>
+    </div>
+    
     <nav aria-label="Primary navigation">
       <a href="#">About Us</a>
       <a href="#">People</a>
@@ -22,9 +25,25 @@
       <a href="#">Join Now</a>
       <a href="#">Employee / Post Job</a>
     </nav>
-    <div class="dark-toggle" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
-      <span class="toggle-circle"></span>
+
+    
+    
+    <button class="mobile-menu-btn" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="mobile-nav">
+      <a href="#">About Us</a>
+      <a href="#">People</a>
+      <a href="#">Resume Builder</a>
+      <a href="#">Resume Checker</a>
+      <a href="#">Jobs</a>
+      <a href="#">Login</a>
+      <a href="#">Join Now</a>
+      <a href="#">Employee / Post Job</a>
     </div>
+    <div class="dark-toggle" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+        <span class="toggle-circle"></span>
   </header>
 
   <main>
@@ -35,7 +54,6 @@
         <p class="description">A free and fast AI resume checker doing crucial checks to ensure your resume is ready to perform and get you interview callbacks.</p>
         <div class="upload-box" role="button" tabindex="0" aria-label="Upload your resume">
           <div class="upload-icon" aria-hidden="true">
-            <!-- cloud upload svg icon -->
             <svg fill="none" stroke="#6f63ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="28" width="28" viewBox="0 0 24 24"><path d="M16 16l-4-4-4 4"/><path d="M12 12v8"/></svg>
           </div>
           <div class="upload-title">Upload Your Resume</div>
@@ -53,7 +71,7 @@
 
     <section class="section-2" aria-label="Resume checker ATS explanation">
       <div class="section-2-left">
-        <img src="img/resumescanner-937d2701.png"" alt="resumescanner" />
+        <img src="img/resumescanner-937d2701.png" alt="resumescanner" />
       </div>
       <div class="section-2-right">
         <h2>HiringMine’s Resume Checker forms its ATS score with a two-tier system</h2>
@@ -69,11 +87,15 @@
     </section>
 
     <section class="section-3" aria-label="Resume optimization checklist and features">
-      <h2>Our AI-powered resume checker goes beyond typos and punctuation</h2>
-      <p class="subheading">We’ve built-in ChatGPT to help you create a resume that’s tailored to the position you’re applying for.</p>
+      <h1>Our AI-powered resume checker goes beyond typos and punctuation</h1>
+      <h3 class="subheading">We’ve built-in ChatGPT to help you create a resume that’s tailored to the position you’re applying for.</h3>
       <div class="cards-grid">
+        <div>
+      <h3 class="resume-checklist">Resume optimization checklist</h3>
+      <p class="resume-checklist">We check for 16 crucial things across 5 different categories on your resume including content, file type, and keywords in the most important sections of your resume.</p>
+      </div>
         <div class="card">
-          <div class="card-icon" aria-hidden="true">✏</div>
+          <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-pencil"></i></div>
           <div class="card-title">Content</div>
           <ul>
             <li>ATS parse rate</li>
@@ -83,7 +105,7 @@
           </ul>
         </div>
         <div class="card">
-          <div class="card-icon" aria-hidden="true">💡</div>
+          <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
           <div class="card-title">Skills Suggestion</div>
           <ul>
             <li>Hard skills</li>
@@ -100,7 +122,7 @@
           </ul>
         </div>
         <div class="card">
-          <div class="card-icon" aria-hidden="true">📄</div>
+          <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></div>
           <div class="card-title">Format</div>
           <ul>
             <li>File format and size</li>
@@ -109,7 +131,7 @@
           </ul>
         </div>
         <div class="card">
-          <div class="card-icon" aria-hidden="true">🎨</div>
+          <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-text-slash"></i></div>
           <div class="card-title">Style</div>
           <ul>
             <li>Resume design</li>
@@ -123,7 +145,7 @@
 
     <section class="section-4" aria-label="Get ATS understanding check">
       <div class="section-4-left">
-        <img src="img/1.png" alt="" />
+        <img src="img/1.png" alt="ATS check" />
       </div>
       <div class="section-4-right">
         <h3>Get an ATS understanding check</h3>
@@ -164,6 +186,14 @@
         <summary>How do I check my resume score?</summary>
         <p>You can upload your resume file here on our site using the upload buttons, and we will process it to give you a detailed score and suggestions.</p>
       </details>
+      <details>
+        <summary>Is my resume data secure?</summary>
+        <p>Yes, we prioritize your privacy and security. All uploaded resumes are encrypted and processed securely, with no personal data stored after analysis.</p>
+      </details>
+      <details>
+        <summary>How long does the analysis take?</summary>
+        <p>Our AI-powered resume analysis typically takes less than 30 seconds to provide you with a comprehensive report and actionable feedback.</p>
+      </details>
     </section>
   </main>
 
@@ -192,7 +222,7 @@
         <ul class="footer-contact"><strong>Contact Us</strong></ul>
         <li class="color">
             <a href="#" aria-label="Gmail link" title="Gmail" tabindex="0" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-envelope" style="font-size: 20px; color: white; margin-right: 10px;"></i>
+                <i class="fas fa-envelope" style="font-size: 15px; color: white; margin-right: 0px;"></i>
             </a>
             <a href="mailto:portal.hiringmine@gmail.com">portal.hiringmine@gmail.com</a>
         </li>
@@ -206,5 +236,43 @@
     </div>
   </footer>
 
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+      
+      // Change icon
+      const icon = mobileMenuBtn.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    
+    // Dark mode toggle
+    const darkToggle = document.querySelector('.dark-toggle');
+    darkToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      darkToggle.classList.toggle('active');
+    });
+    
+    // Upload box interactions
+    const uploadBoxes = document.querySelectorAll('.upload-box, .upload-box-lower');
+    uploadBoxes.forEach(box => {
+      box.addEventListener('click', function() {
+        this.style.backgroundColor = '#e2e0ff';
+        setTimeout(() => {
+          this.style.backgroundColor = '';
+        }, 300);
+        alert('File upload dialog would open here in a real implementation');
+      });
+    });
+  </script>
 </body>
 </html>
